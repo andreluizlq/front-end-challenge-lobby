@@ -14,7 +14,6 @@ This project was developed using cutting edge front-end technologies.
  - Axios
  - React-query
 
-
 # 💻 Getting started
 Requirements
 You need to install both Node.js to run this project.
