@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { GetRedeems } from "@/services/redeems";
-import { RedeemsListResponse, RedeemItem } from "@/services/redeems/type";
-import { Stack, Typography } from "@mui/material";
+import { GetRedeems } from "../../services/redeems";
+import { RedeemsListResponse } from "../../services/redeems/type";
 import { useQuery } from "@tanstack/react-query";
 import StepSelectPage from "./components/StepSelectPage";
 import StepRedeemItem from "./components/StepRedeemItem";
 import StepRedeemForm from "./components/StepRedeemForm";
-import Container from "@/components/container";
+import Container from "../../components/container";
 
 const RedeemsForm = () => {
   const [step, setStep] = useState<number>(1);

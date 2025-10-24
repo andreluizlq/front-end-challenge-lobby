@@ -11,14 +11,14 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { FormValues, RedeemsListResponse } from "@/services/redeems/type";
+import { FormValues, RedeemsListResponse } from "../../../services/redeems/type";
 import { useQuery } from "@tanstack/react-query";
-import { states } from "@/services/States/type";
-import { getStates } from "@/services/States";
+import { states } from "../../../services/States/type";
+import { getStates } from "../../../services/States";
 import { LocalizationProvider, DateField } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { ptBR } from "date-fns/locale";
-import { PostRedeems } from "@/services/redeems";
+import { PostRedeems } from "../../../services/redeems";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useSnackbar } from "notistack"

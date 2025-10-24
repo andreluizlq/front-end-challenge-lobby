@@ -1,4 +1,4 @@
-import { axiosApi, createAxiosConfig } from '@/services/axiosApi';
+import { axiosApi, createAxiosConfig } from '../../services/axiosApi';
 import { FormValues, RedeemsListResponse } from './type';
 
 export function GetRedeems(apiKey: string) {

@@ -1,9 +1,9 @@
 "use client";
 
-import { ResponsiveImage } from "@/components/responsive-image";
+import { ResponsiveImage } from "../../components/responsive-image";
 import { Box, Stack, Typography } from "@mui/material";
 import logo from "../../assets/logo.svg";
-import Container from "@/components/container";
+import Container from "../../components/container";
 
 const RedeemSuccess = () => {
   return (

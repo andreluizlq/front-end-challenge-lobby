@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Stack, CircularProgress } from "@mui/material";
-import RedeemsFooter from "@/components/footer";
+import RedeemsFooter from "../../components/footer";
 
 type ContainerProps = {
   children: React.ReactNode;

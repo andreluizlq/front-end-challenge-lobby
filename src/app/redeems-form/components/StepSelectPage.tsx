@@ -2,7 +2,7 @@
 
 import { Button, Stack, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { RedeemsListResponse } from "@/services/redeems/type";
+import { RedeemsListResponse } from "../../../services/redeems/type";
 
 type StepSelectPageProps = {
   redeemPages: RedeemsListResponse["redeem_pages"];

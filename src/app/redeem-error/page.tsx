@@ -1,11 +1,11 @@
 "use client";
 
-import { ResponsiveImage } from "@/components/responsive-image";
+import { ResponsiveImage } from "../../components/responsive-image";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import logo from "../../assets/logo.svg";
 import error from "../../assets/error.svg";
 import Link from "next/link";
-import Container from "@/components/container";
+import Container from "../../components/container";
 
 const RedeemError = () => {
   return (

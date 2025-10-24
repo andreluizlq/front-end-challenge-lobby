@@ -7,8 +7,8 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import { RedeemsListResponse } from "@/services/redeems/type";
-import ProductCard from "@/components/card";
+import { RedeemsListResponse } from "../../../services/redeems/type";
+import ProductCard from "../../../components/card";
 import { enqueueSnackbar } from "notistack";
 
 type StepRedeemFormProps = {

@@ -1,10 +1,10 @@
 "use client";
 
-import { ResponsiveImage } from "@/components/responsive-image";
+import { ResponsiveImage } from "../components/responsive-image";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import logo from "../assets/logo.svg";
 import Link from "next/link";
-import Container from "@/components/container";
+import Container from "../components/container";
 
 const PageHome = () => {
   return (
@@ -34,15 +34,15 @@ const PageHome = () => {
           />
         </Box>
 
-        <Typography fontWeight="600"  fontSize={{md:"40px", xs:"28px" }} color="primary" mb="20px" textAlign="center">
+        <Typography fontWeight="600" fontSize={{ md: "40px", xs: "28px" }} color="primary" mb="20px" textAlign="center">
           Bem-vindo!
         </Typography>
 
         <Stack spacing="8px" mb="40px">
-          <Typography fontWeight="400"  fontSize={{md:"20px", xs:"16px" }} color="info" textAlign="center">
+          <Typography fontWeight="400" fontSize={{ md: "20px", xs: "16px" }} color="info" textAlign="center">
             Estamos muito felizes em ter você em nossa equipe!
           </Typography>
-          <Typography fontWeight="400"  fontSize={{md:"20px", xs:"16px" }} color="info" textAlign="center">
+          <Typography fontWeight="400" fontSize={{ md: "20px", xs: "16px" }} color="info" textAlign="center">
             Preencha as perguntinhas a seguir para escolher o seu presente! 🎁
           </Typography>
         </Stack>
