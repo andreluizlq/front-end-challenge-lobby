@@ -1,7 +1,7 @@
 # Customer registration 
 Front-end challenge passed by the company Lobby. 
 
-![alt text](https://raw.githubusercontent.com/andreluizlq/front-end-challenge-lobby/master/public/home.png)
+![alt text](https://raw.githubusercontent.com/andreluizlq/front-end-challenge-lobby/master/public/lobby.png)
 
 # Tecnologies
 
