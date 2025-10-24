@@ -1,4 +1,4 @@
-# Customer registration 
+# Redeems challenge
 Front-end challenge passed by the company Lobby. 
 
 ![alt text](https://raw.githubusercontent.com/andreluizlq/front-end-challenge-lobby/master/public/lobby.png)
