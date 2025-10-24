@@ -2,24 +2,21 @@
 
 import { ResponsiveImage } from "@/components/responsive-image";
 import { Box, Button, Stack, Typography } from "@mui/material";
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
+import error from "../../assets/error.svg";
 import Link from "next/link";
 import Container from "@/components/container";
 
-const PageHome = () => {
+const RedeemError = () => {
   return (
     <Container>
-      <Stack
-        alignItems="center"
-        justifyContent="space-between"
-      >
+      <Stack flexGrow={1} alignItems="center" justifyContent="center">
         <Box
           position="relative"
           maxWidth="189px"
           width="100%"
           sx={{
             aspectRatio: "1 / 1",
-            mb: 3,
           }}
         >
           <ResponsiveImage
@@ -33,21 +30,35 @@ const PageHome = () => {
             }}
           />
         </Box>
+        <Box
+          position="relative"
+          width="100%"
+          sx={{
+            aspectRatio: "5 / 2",
+          }}
+        >
+          <ResponsiveImage
+            imageProps={{
+              src: error,
+              fill: true,
+              alt: "error-image",
+              draggable: false,
+              priority: true,
+            }}
+          />
+        </Box>
 
-        <Typography fontWeight="600"  fontSize={{md:"40px", xs:"28px" }} color="primary" mb="20px" textAlign="center">
-          Bem-vindo!
-        </Typography>
-
-        <Stack spacing="8px" mb="40px">
-          <Typography fontWeight="400"  fontSize={{md:"20px", xs:"16px" }} color="info" textAlign="center">
-            Estamos muito felizes em ter você em nossa equipe!
+        <Stack alignItems="center">
+          <Typography fontWeight="600" fontSize={{ md: "40px", xs: "28px" }} color="secondary" mb="20px" textAlign="center">
+            Oops! Página não encontrada.
           </Typography>
-          <Typography fontWeight="400"  fontSize={{md:"20px", xs:"16px" }} color="info" textAlign="center">
-            Preencha as perguntinhas a seguir para escolher o seu presente! 🎁
-          </Typography>
+          <Stack spacing="8px" mb="40px">
+            <Typography fontWeight="400" fontSize={{ md: "20px", xs: "16px" }} color="info" textAlign="center">
+              Parece que você explorou demais, e acabou se perdendo.
+            </Typography>
+          </Stack>
         </Stack>
-
-        <Link href={"/redeems-form"}>
+        <Link href={"/"}>
           <Button
             color="secondary"
             variant="contained"
@@ -62,8 +73,9 @@ const PageHome = () => {
               fontSize="14px"
               color="#fff"
               textTransform="capitalize"
+              textAlign="center"
             >
-              Começar!
+              Voltar para página inicial
             </Typography>
           </Button>
         </Link>
@@ -72,4 +84,4 @@ const PageHome = () => {
   );
 };
 
-export default PageHome;
+export default RedeemError;
